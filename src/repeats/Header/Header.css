@@ -1,7 +1,11 @@
 .nav {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
-    background: #960909;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background: #960909;
+}
+
+.navLink {
+  
 }
