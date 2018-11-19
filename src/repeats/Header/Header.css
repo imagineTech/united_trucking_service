@@ -11,5 +11,11 @@
   color: white;
   font-size: 20px;
   text-decoration: none;
-  margin: 5px;
+  margin: 0px 20px;
+}
+
+.navBreak {
+  height: 15px;
+  width: 2px;
+  background-color: white;
 }
