@@ -6,9 +6,15 @@ const HeaderNav = () => {
   return (
     <navcont>
       <info className="info">
-        <div className="infoLeft"></div>
+        <div className="infoLeft">
+          <div className="sales">SALES, PARTS & SANDBLASTING</div>
+          <div className="phoneNumber">(908) 361-0376</div>
+        </div>
         <img className="logo" src="" alt="United Truck Service Logo"></img>
-        <div className="infoRight"></div>
+        <div className="infoRight">
+        <div className="towing">TOWING</div>
+        <div className="phoneNumber">(908) 224-0060</div>
+        </div>
       </info>
       <nav className="nav">
         <Link className="navLink" to="/">HOME</Link>

@@ -1,21 +1,37 @@
 .info {
-  height: 100px;
+  height: 150px;
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .infoLeft {
+  width: 200px;
+  margin-left: 10px;
+}
 
+.sales {
+  color: #960909;
+  font-size: 25px;
+}
+
+.phoneNumber {
+  font-size: 20px;
 }
 
 .logo {
-  
+
 }
 
 .infoRight {
+  width: 135px;
+}
 
+.towing {
+  color: #960909;
+  font-size: 30px;
 }
 
 .nav {
