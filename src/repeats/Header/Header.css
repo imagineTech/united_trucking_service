@@ -1,3 +1,23 @@
+.info {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoLeft {
+
+}
+
+.logo {
+  
+}
+
+.infoRight {
+
+}
+
 .nav {
   display: flex;
   justify-content: center;
