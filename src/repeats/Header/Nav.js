@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HeadNavContainer, NavItem } from './header_css';
 
 const HeaderNav = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link> <Link to="/about">About</Link>{" "}
-      <Link to="/contact">Contact</Link>{" "}
-      <Link to="/services">Towing Services</Link>
-    </nav>
+    <HeadNavContainer>
+      {/* Using activeClassName now so that we may use media queries */}
+      <NavItem exact={true} to="/" activeClassName="nav-active">Home</NavItem>
+      <NavItem to="/about" activeClassName="nav-active">About</NavItem>
+      <NavItem to="/contact" activeClassName="nav-active">Contact</NavItem>
+      <NavItem to="/services" activeClassName="nav-active">Towing Services</NavItem>
+    </HeadNavContainer>
   );
 };
 

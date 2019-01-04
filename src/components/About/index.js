@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
+import { About } from './about_css';
+import { downloadImage } from '../../repeats/Image';
 import AboutContent from './Content';
-import AboutTeam from './Team';
+import AboutImage from './Image';
 
 class AboutContainer extends Component {
+
+  state = {
+    aboutImageURL: ""
+  }
+
+  componentDidMount() {
+    downloadImage(this.props.location.pathname).then(url => (
+      this.setState({ aboutImageURL: url })
+    ))
+  }
+
   render() {
-    return(
-      <div>
-        <h1>“ABOUT” PAGE TITLE</h1>
+    const { location } = this.props;
+    const { aboutImageURL } = this.state;
+    return (
+      <About>
+        <h1>About Us</h1>
         <AboutContent />
-        <AboutTeam />
-      </div>
+        <AboutImage url={aboutImageURL} location={location} />
+      </About>
     )
   }
 }
